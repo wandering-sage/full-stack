@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="drag-area">
+    <div class="close-btn hide">X</div>
+    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    <h2>Drag & Drop to Upload File</h2>
+    <span>OR</span>
+    <button>Browse File</button>
+    <input type="file" hidden required>
+  </div>
+
+  <div class="form-container">
+      <form action="" class="addService">
+          <div class="form-field">
+              <label for="name">Service Name</label>
+              <input  class="form-input" type="text" name="name" required>
+          </div>
+          <div class="form-field">
+              <label for="category-name">Category</label>
+              <select name="category" class="category-dropdown form-input" required>
+                <option value="" disabled selected>Choose category</option>
+              </select>
+          </div>
+          <div class="form-field">
+              <label for="duration">Duration</label>
+              <div class="inp-num">
+                <div class="value-button decrease">-</div>
+                <input  class="form-input" type="number" id="number" value="60" step="15" min="0" max="99999"/>
+                <div class="value-button increase">+</div>
+              </div>
+          </div>
+          <div class="form-field">
+            <label for="cost">Cost</label>
+            <div class="inp-num">
+              <div class="value-button decrease">-</div>
+              <input  class="form-input" type="number" id="number" value="100" step="50" min="0" max="9999"/>
+              <div class="value-button increase">+</div>
+            </div>
+          </div>
+          <button class="form-button add-service-btn" type="submit">Add Service</button>
+      </form>
+  </div>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>

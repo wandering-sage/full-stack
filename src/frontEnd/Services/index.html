@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<svg
+				class="navbar-toggle ham hamRotate"
+				viewBox="0 0 100 100"
+				width="70"
+			>
+				<path
+					class="line top"
+					d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+				/>
+				<path class="line middle" d="m 30,50 h 40" />
+				<path
+					class="line bottom"
+					d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+				/>
+			</svg>
+			<a href="#" id="logo">logo</a>
+			<ul id="main-nav">
+				<li>
+					<a href="/home" class="nav-links">Home</a>
+				</li>
+				<li>
+					<a href="/services" class="nav-links">Services</a>
+				</li>
+				<li>
+					<a href="/SignIn" class="nav-links">Login</a>
+				</li>
+				<li>
+					<a href="/appointment" class="nav-links">Book appointment</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="proceed hide">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
+				<g>
+					<path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0   c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267   c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407   s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062   C438.533,179.485,428.732,142.795,409.133,109.203z M361.74,259.517l-29.123,29.129c-3.621,3.614-7.901,5.424-12.847,5.424   c-4.948,0-9.236-1.81-12.847-5.424l-87.654-87.653l-87.646,87.653c-3.616,3.614-7.898,5.424-12.847,5.424   c-4.95,0-9.233-1.81-12.85-5.424l-29.12-29.129c-3.617-3.607-5.426-7.898-5.426-12.847c0-4.942,1.809-9.227,5.426-12.848   l129.62-129.616c3.617-3.617,7.898-5.424,12.847-5.424s9.238,1.807,12.846,5.424L361.74,233.822   c3.613,3.621,5.424,7.905,5.424,12.848C367.164,251.618,365.357,255.909,361.74,259.517z"/>
+				</g>
+				</svg>
+		</div>
+		<h1>Avaliable Services</h1>
+		<h2>Click to select</h2>
+		<div class="grid"></div>
+		<div class="appointment">
+			<h2>Proceed to Appointment</h2>
+			<div class="appoint-cntr"></div>
+			<div class="final-cost">Total: ₹ <span class="total">0</span></div>
+			<div class="book-appointment">Book Appointment</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
